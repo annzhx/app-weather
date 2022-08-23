@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/151388ffa1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div id="weather" class="weather-container">
+        <div class="row">
+          <div class="clearfix">
+            <br/>
+            <form id="float-left">
+                <input
+                  type="search"
+                  id="field"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                />
+                <input type="submit" class="btn btn-primary" value="Search" />
+  
+              </form>
+            
+          </div>
+        </div>
+        <div class="row current-weather">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
+              <div>
+              
+             
+              </div>
+            </div>
+            <br/>
+            <h1 id="city">Odesa</h1>
+            <span class = "description" id="description">Sunny</span>
+      <h2>
+      <span id="temperature">19°</span>
+      <span id="units">
+        <a id="temperature-c" href="#">°C</a>|<a id="temperature-f" href="#">°F</a>
+      </span>
+    </h2>
+      </div>
+    </div>
+    
+        <div class="wind">
+          <p>HUMIDITY: <span id ="humidity"></span> % <br>
+            WIND: <span id ="wind"></span>km/h</p>
+        </div>
+        
+        <div class="date">
+            <h3 id="date-time">Sunday</h3>
+            
+        </div>
+            
+            </div>
+            
+          
+            <script src="src/index.js"> </script>      
+  </body>
+</html>
