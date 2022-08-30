@@ -60,14 +60,16 @@
             <h1 id="city">Odesa</h1>
             <span class = "description" id="description">Sunny</span>
       <h2>
-      <span id="temperature">19°</span>
+      <div class="temperature"></div>
+      <span id = "temperature"></span>
       <span id="units">
-        <a id="temperature-c" href="#">°C</a>|<a id="temperature-f" href="#">°F</a>
+        <a id="temperature-c" href="#" class="active">°C</a>|<a id="temperature-f" href="#">°F</a>
       </span>
     </h2>
       </div>
     </div>
-    
+    <div class="weather-forecast" id="forecast"></div>
+     
         <div class="wind">
           <p>HUMIDITY: <span id ="humidity"></span> % <br>
             WIND: <span id ="wind"></span>km/h</p>
@@ -77,10 +79,11 @@
             <h3 id="date-time">Sunday</h3>
             
         </div>
-            
+          
             </div>
             
           
             <script src="src/index.js"> </script>      
   </body>
 </html>
+

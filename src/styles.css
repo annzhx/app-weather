@@ -2,34 +2,33 @@ h1 {
   text-transform: capitalize;
   color: lightblue;
   font-size: 40px;
-  position: relative;
-  right: -8px;
-  top: -150px;
+  position: absolute;
+  left: 0;
+  top: 91px;
   padding: 10px 20px;
 }
 h2 {
   color: lightgoldenrodyellow;
   font-size: 40px;
-  position: relative;
-  top: -180px;
-  right: -5px;
-  padding: 10px 20px;
+  position: absolute;
+  top: 190px;
+  right: 405px;
+  padding: 1px;
 }
 .wind {
   position: absolute;
-  top: 250px;
-  left: 455px;
+  right: 50px;
+  top: 100px;
   font-weight: 300;
-  text-align: right;
-  font-style: italic;
-  font-size: 40px;
+
+  font-size: 30px;
   color: black;
 }
 .container {
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
   border-radius: 10px;
   width: 600px;
-  height: 400px;
+  height: 500px;
   margin-top: 29;
 }
 
@@ -37,20 +36,23 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .col-2 {
-  font-size: 30px;
+  font-size: 25px;
   position: relative;
-  right: -90;
+  right: -110;
   top: -120;
-  color: black;
+  color: lightblue;
+  background-color: lightcyan;
+  padding: 5px;
+  margin: 4px 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 .date {
-  position: relative;
-  top: -550;
-  right: -350;
-  font-size: 10px;
+  position: absolute;
+  top: 27px;
+  right: 2px;
   background: lightcyan;
-  margin: 0px 380px 0px 0px;
-  padding: 3px;
+  padding: 4px;
   border-radius: 4px;
   color: lightblue;
   text-align: center;
@@ -59,22 +61,41 @@ form {
   font-size: 20px;
   padding: 10px 20px;
 }
-img {
-  position: relative;
-  top: 10;
-  left: -10;
-}
+
 .weather-temperature img {
-  position: relative;
-  left: 300px;
-  top: 40px;
+  position: absolute;
+  left: 190px;
+  top: 160px;
   width: 100px;
 }
 .description {
-  position: relative;
-  top: -170px;
-  left: 25px;
+  position: absolute;
+  top: 150px;
+  left: 20px;
   color: lightblue;
   font-size: 30px;
   text-transform: capitalize;
+}
+.weather-forecast {
+  position: absolute;
+  bottom: -75px;
+  width: 100%;
+  left: -90px;
+  font-size: 30px;
+}
+weather-forecasr-date {
+  font-size: 16px;
+}
+.weather-container {
+  position: relative;
+  height: 500px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  color: #09203f;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: #09203f;
 }
